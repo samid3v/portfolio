@@ -1,36 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Palette, Code, Smartphone, Sparkles, ArrowRight } from "lucide-react";
+import { Globe, Code, Zap, Sparkles, ArrowRight } from "lucide-react";
 
 export default function Services() {
   const services = [
     {
-      icon: Palette,
-      title: "UI/UX Design",
+      icon: Code,
+      title: "Software Engineering",
       description:
-        "Create a beautiful and useful user interface design with a seamless user experience for your website or mobile app.",
-      projectCount: "80 Projects",
-      color: "from-pink-500 to-rose-500",
-      features: ["Wireframing", "Prototyping", "User Research", "Design Systems"],
+        "Developing robust and scalable software solutions with modern technologies and best practices.",
+      projectCount: "50+ Projects",
+      color: "from-blue-500 to-cyan-500",
+      features: ["Full-Stack Development", "API Integration", "Database Design", "System Architecture"],
     },
     {
-      icon: Code,
+      icon: Globe,
       title: "Web Development",
       description:
-        "Build a quality website with the best technology and optimization on search engines to reach more customers.",
-      projectCount: "120 Projects",
-      color: "from-blue-500 to-cyan-500",
-      features: ["Responsive Design", "SEO Optimization", "Performance", "Security"],
+        "Building responsive and high-performance websites with cutting-edge technologies and SEO optimization.",
+      projectCount: "30+ Projects",
+      color: "from-green-500 to-emerald-500",
+      features: ["Frontend Design", "Backend Systems", "SEO Optimization", "Performance Tuning"],
     },
     {
-      icon: Smartphone,
-      title: "Mobile Development",
+      icon: Zap,
+      title: "Automation & AI Solutions",
       description:
-        "Create an app from your own idea that can be used on Android and iOS with the best quality and performance.",
-      projectCount: "50 Projects",
+        "Implementing intelligent automation and AI-driven tools to streamline business processes and enhance productivity.",
+      projectCount: "20+ Projects",
       color: "from-purple-500 to-indigo-500",
-      features: ["Cross-Platform", "Native Apps", "App Store", "Push Notifications"],
+      features: ["AI Prompt Engineering", "Cloud Automation", "Workflow Optimization", "CRM Integration"],
     },
   ];
 

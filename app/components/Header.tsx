@@ -56,7 +56,7 @@ export default function Header() {
               />
             </motion.div>
             <span className="text-xl font-bold bg-gradient-to-r from-white to-amber-500 bg-clip-text text-transparent">
-              Adams
+              Samid3v
             </span>
           </motion.div>
 

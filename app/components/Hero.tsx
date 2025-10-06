@@ -66,7 +66,7 @@ export default function Hero() {
                 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight"
               >
                 <span className="bg-gradient-to-r from-white via-amber-200 to-amber-500 bg-clip-text text-transparent">
-                  James Adams
+                  Sammy Wanyoike
                 </span>
               </motion.h1>
               
@@ -76,7 +76,7 @@ export default function Hero() {
                 transition={{ delay: 0.4 }}
                 className="flex flex-wrap gap-2"
               >
-                {["Full Stack Developer", "UI/UX Designer", "Creative Thinker"].map((role, i) => (
+                {["Software Engineer", "Web Developer", "Automation & AI Solutions"].map((role, i) => (
                   <motion.span
                     key={role}
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -95,9 +95,7 @@ export default function Hero() {
                 transition={{ delay: 0.6 }}
                 className="text-gray-300 text-lg max-w-xl leading-relaxed"
               >
-                A passionate freelancer who provides services for digital programming and design content needs. 
-                Transforming ideas into exceptional digital experiences with{" "}
-                <span className="text-amber-500 font-semibold">10+ years</span> of expertise.
+                Innovative Software Engineer with a strong background in web development, backend systems, and cloud-based automation. Skilled in designing and deploying full-stack applications, integrating AI-driven tools, and optimizing business workflows through technology.
               </motion.p>
             </motion.div>
 

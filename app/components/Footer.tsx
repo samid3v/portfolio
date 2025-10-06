@@ -43,10 +43,10 @@ export default function Footer() {
               >
                 <span className="text-white text-sm">⚡</span>
               </motion.div>
-              <span className="text-xl font-bold text-white">Adams</span>
+              <span className="text-xl font-bold text-white">Sammy Wanyoike</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Creating exceptional digital experiences with passion and expertise. Let's build something amazing together.
+              Innovative Software Engineer specializing in web development, backend systems, and cloud-based automation. Let's build something amazing together.
             </p>
           </motion.div>
 
@@ -88,21 +88,21 @@ export default function Footer() {
                 className="flex items-center gap-3 text-gray-400 text-sm"
               >
                 <Mail size={16} className="text-amber-500" />
-                <span>hello@jamesadams.dev</span>
+                <span>swanyoike154@gmail.com</span>
               </motion.div>
               <motion.div
                 whileHover={{ x: 5 }}
                 className="flex items-center gap-3 text-gray-400 text-sm"
               >
                 <Phone size={16} className="text-amber-500" />
-                <span>+1 (555) 123-4567</span>
+                <span>0713660231</span>
               </motion.div>
               <motion.div
                 whileHover={{ x: 5 }}
                 className="flex items-center gap-3 text-gray-400 text-sm"
               >
                 <MapPin size={16} className="text-amber-500" />
-                <span>San Francisco, CA</span>
+                <span>Kenya</span>
               </motion.div>
             </div>
           </motion.div>
@@ -116,7 +116,7 @@ export default function Footer() {
           className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <div className="flex items-center space-x-2 text-gray-400 text-sm">
-            <span>© {currentYear} James Adams.</span>
+            <span>© {currentYear} Sammy Wanyoike.</span>
             <span className="flex items-center gap-1">
               Made with <Heart size={14} className="text-red-500 fill-red-500 animate-pulse" /> and
             </span>

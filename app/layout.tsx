@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "James Adams - Portfolio",
-  description: "A freelancer who provides services for digital programming and design content needs. With more than 10 years of experience.",
+  title: "Samid3v - Software Engineer | Web Developer | Automation & AI Solutions",
+  description: "Innovative Software Engineer with a strong background in web development, backend systems, and cloud-based automation. Skilled in designing and deploying full-stack applications, integrating AI-driven tools, and optimizing business workflows through technology.",
 };
 
 export default function RootLayout({

@@ -158,7 +158,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="order-1 lg:order-2 flex justify-center lg:justify-end"
+            className="order-1 lg:order-2 flex justify-center"
           >
             <div className="relative">
               {/* Outer Glow Rings */}
@@ -194,21 +194,21 @@ export default function Hero() {
                 </div>
 
                 {/* Profile Image */}
-                <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-transparent shadow-2xl">
-                  <img
-                    src="/img/Sami-profle-img.png"
-                    alt="Sammy Wanyoike"
-                    className="w-full h-full object-cover"
-                  />
+                <div className="relative w-80 h-80 sm:w-96 sm:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full overflow-hidden border-4 border-transparent shadow-2xl">
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 via-purple-500/10 to-orange-500/20 rounded-full" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 via-purple-500/10 to-orange-500/20 rounded-full z-10" />
                   {/* Shine Effect */}
                   <motion.div
                     animate={{
                       x: ["-100%", "200%"],
                     }}
                     transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 rounded-full"
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 rounded-full z-20"
+                  />
+                  <img
+                    src="/img/Sami-profle-img.png"
+                    alt="Sammy Wanyoike"
+                    className="w-full h-full object-cover z-30 rounded-full"
                   />
                 </div>
 

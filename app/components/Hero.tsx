@@ -194,30 +194,21 @@ export default function Hero() {
                 </div>
 
                 {/* Profile Image */}
-                <div className="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl">
-                  {/* Placeholder Content */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-700 via-gray-800 to-gray-900">
-                    <div className="text-center space-y-4">
-                      <motion.div
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                        className="w-32 h-32 mx-auto bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center shadow-2xl"
-                      >
-                        <span className="text-6xl">👨‍💻</span>
-                      </motion.div>
-                      <p className="text-gray-400 text-sm px-4">
-                        Your amazing photo here
-                      </p>
-                    </div>
-                  </div>
-
+                <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-transparent shadow-2xl">
+                  <img
+                    src="/img/Sami-profle-img.png"
+                    alt="Sammy Wanyoike"
+                    className="w-full h-full object-cover"
+                  />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 via-purple-500/10 to-orange-500/20 rounded-full" />
                   {/* Shine Effect */}
                   <motion.div
                     animate={{
                       x: ["-100%", "200%"],
                     }}
                     transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 rounded-full"
                   />
                 </div>
 

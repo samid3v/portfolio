@@ -50,6 +50,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Scroll margin for fixed header */
+section {
+  scroll-margin-top: 5rem;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 12px;

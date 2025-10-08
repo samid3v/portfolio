@@ -1,4 +1,3 @@
-- [x] Edit Services.tsx: Remove projectCount and "Learn More" button from each service
-- [x] Edit Skills.tsx: Replace "Cybersecurity" with "IT Support"
-- [x] Edit Projects.tsx: Remove "Veterinary Clinic Management System", replace image with icon for School Management System
-- [x] Test the changes (skipped by user)
+- [x] Align body content with navbar width (added scroll-margin-top to sections)
+- [x] Optimize animations for fast loading and smooth scrolling (lazy loading components, reduced animation durations, smooth scrolling already present)
+- [x] Test the optimizations (skipped by user)

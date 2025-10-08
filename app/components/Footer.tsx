@@ -116,11 +116,7 @@ export default function Footer() {
           className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4"
         >
           <div className="flex items-center space-x-2 text-gray-400 text-sm">
-            <span>© {currentYear} Sammy Wanyoike.</span>
-            <span className="flex items-center gap-1">
-              Made with <Heart size={14} className="text-red-500 fill-red-500 animate-pulse" /> and
-            </span>
-            <span className="text-amber-500 font-semibold">Next.js</span>
+            <span>© 2025 Samidev</span>
           </div>
 
           {/* Scroll to Top */}

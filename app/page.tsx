@@ -2,14 +2,16 @@
 
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
-import Header from "./components/Header";
-import Loader from "./components/Loader";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Skills from "./components/Skills";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Footer from "./components/Footer";
+import dynamic from "next/dynamic";
+
+const Header = dynamic(() => import("./components/Header"), { ssr: false });
+const Loader = dynamic(() => import("./components/Loader"), { ssr: false });
+const Hero = dynamic(() => import("./components/Hero"));
+const Services = dynamic(() => import("./components/Services"));
+const Skills = dynamic(() => import("./components/Skills"));
+const Experience = dynamic(() => import("./components/Experience"));
+const Projects = dynamic(() => import("./components/Projects"));
+const Footer = dynamic(() => import("./components/Footer"));
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

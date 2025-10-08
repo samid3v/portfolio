@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Github, Linkedin, Sparkles } from "lucide-react";
+import { Menu, X, Github, Linkedin, Code } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,7 +41,7 @@ export default function Header() {
               transition={{ duration: 3, repeat: Infinity }}
               className="relative w-10 h-10 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center shadow-lg shadow-amber-500/50"
             >
-              <Sparkles size={20} className="text-white" />
+              <Code size={20} className="text-white" />
               
               {/* Glow ring */}
               <motion.div

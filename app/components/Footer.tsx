@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Heart, Mail, MapPin, Phone, ArrowUp } from "lucide-react";
+import { Heart, Mail, MapPin, Phone, ArrowUp, Code } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -41,7 +41,7 @@ export default function Footer() {
                 transition={{ duration: 3, repeat: Infinity }}
                 className="w-8 h-8 bg-gradient-to-br from-amber-500 to-orange-500 rounded-full flex items-center justify-center"
               >
-                <span className="text-white text-sm">⚡</span>
+                <Code size={20} className="text-white" />
               </motion.div>
               <span className="text-xl font-bold text-white">Sammy Wanyoike</span>
             </div>

@@ -8,7 +8,7 @@ export default function Projects() {
     {
       title: "Veterinary Clinic Management System",
       description: "Features: patient booking, billing, treatment records, customer management.",
-      image: "🩺",
+      image: "/projects/Portfolio.PNG",
       tags: ["Python", "Flask", "MySQL"],
       color: "from-blue-500 to-cyan-500",
       github: "#",
@@ -17,7 +17,7 @@ export default function Projects() {
     {
       title: "School Management System (One27 K.A.G Academy)",
       description: "Full offline web app with student, teacher, and grade management. Generates dynamic performance reports and record books.",
-      image: "🏫",
+      image: "/projects/Portfolio.PNG",
       tags: ["Web App", "Offline", "Reports"],
       color: "from-green-500 to-emerald-500",
       github: "#",
@@ -26,7 +26,7 @@ export default function Projects() {
     {
       title: "Real Estate CRM Website",
       description: "CRM integration for leads management. Google Analytics, Ads, and live chatbot embedded.",
-      image: "🏠",
+      image: "/projects/rehan-website.PNG",
       tags: ["CRM", "Analytics", "Chatbot"],
       color: "from-purple-500 to-indigo-500",
       github: "#",
@@ -35,7 +35,7 @@ export default function Projects() {
     {
       title: "Hair Parlour Website",
       description: "Modern, responsive site with booking system and calendar integration. SEO-optimized with Google Analytics.",
-      image: "💇",
+      image: "/projects/hairpitch.PNG",
       tags: ["Responsive", "Booking", "SEO"],
       color: "from-pink-500 to-rose-500",
       github: "#",
@@ -44,16 +44,25 @@ export default function Projects() {
     {
       title: "Pet Farm Website",
       description: "Website for pet farm services with modern design and functionality.",
-      image: "🐾",
+      image: "/projects/Petfarm.PNG",
       tags: ["Web Development", "Responsive", "Modern"],
       color: "from-orange-500 to-amber-500",
       github: "#",
       live: "https://petfarm.onrender.com",
     },
     {
+      title: "Manzil Restaurant",
+      description: "WordPress website for Manzil Restaurant, showcasing menu, services, and online presence.",
+      image: "/projects/ManzilRestaurant.PNG",
+      tags: ["WordPress", "Restaurant", "Web Development"],
+      color: "from-red-500 to-orange-500",
+      github: "#",
+      live: "https://manzilrestaurant.co.ke",
+    },
+    {
       title: "E-Commerce Solutions",
       description: "Built and maintained high-performance eCommerce websites with CRM and analytics integration.",
-      image: "🛒",
+      image: "/projects/Portfolio.PNG",
       tags: ["eCommerce", "CRM", "Analytics"],
       color: "from-indigo-500 to-purple-500",
       github: "#",
@@ -140,9 +149,9 @@ export default function Projects() {
                 <div className="relative mb-6">
                   <motion.div
                     whileHover={{ scale: 1.1, rotate: 5 }}
-                    className={`w-20 h-20 bg-gradient-to-br ${project.color} rounded-2xl flex items-center justify-center text-4xl shadow-lg`}
+                    className={`w-20 h-20 bg-gradient-to-br ${project.color} rounded-2xl flex items-center justify-center shadow-lg overflow-hidden`}
                   >
-                    {project.image}
+                    <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-2xl" />
                   </motion.div>
                   
                   {/* Shine Effect */}

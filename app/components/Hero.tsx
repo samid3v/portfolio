@@ -115,13 +115,15 @@ export default function Hero() {
                 <ArrowRight size={20} />
               </motion.button>
               
-              <motion.button
+              <motion.a
+                href="/cv/Sammy_CV.pdf"
+                download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-amber-500/30 text-white rounded-full font-semibold hover:bg-white/10 transition-all"
+                className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-amber-500/30 text-white rounded-full font-semibold hover:bg-white/10 transition-all inline-block text-center"
               >
                 Download CV
-              </motion.button>
+              </motion.a>
             </motion.div>
 
             {/* Social Links */}

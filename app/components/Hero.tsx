@@ -76,7 +76,7 @@ export default function Hero() {
                 transition={{ delay: 0.4 }}
                 className="flex flex-wrap gap-2"
               >
-                {["Software Engineer", "Web Developer", "Automation & AI Solutions"].map((role, i) => (
+                {["Web Developer", "Automation & AI Solutions", "IT Support"].map((role, i) => (
                   <motion.span
                     key={role}
                     initial={{ opacity: 0, scale: 0.8 }}
@@ -95,7 +95,7 @@ export default function Hero() {
                 transition={{ delay: 0.6 }}
                 className="text-gray-300 text-lg max-w-xl leading-relaxed"
               >
-                Innovative Software Engineer with a strong background in web development, backend systems, and cloud-based automation. Skilled in designing and deploying full-stack applications, integrating AI-driven tools, and optimizing business workflows through technology.
+                Innovative Full-Stack Developer with a strong background in web development, backend systems, and cloud-based automation. Skilled in designing and deploying full-stack applications, integrating AI-driven tools, and optimizing business workflows through technology.
               </motion.p>
             </motion.div>
 

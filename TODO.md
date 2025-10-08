@@ -1,3 +1,0 @@
-- [x] Align body content with navbar width (added scroll-margin-top to sections)
-- [x] Optimize animations for fast loading and smooth scrolling (lazy loading components, reduced animation durations, smooth scrolling already present)
-- [x] Test the optimizations (skipped by user)

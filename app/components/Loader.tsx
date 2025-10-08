@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const creativeMessages = [
-  "Loading your portfolio...",
+  "Wait a minute...",
   "Almost ready...",
-  "Just a moment...",
+  "Finalizing the magic...",
 ];
 
 export default function Loader({ onLoadingComplete }: { onLoadingComplete: () => void }) {

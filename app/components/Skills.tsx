@@ -37,7 +37,7 @@ export default function Skills() {
     },
     {
       icon: Palette,
-      name: "Cybersecurity",
+      name: "IT Support",
       level: 80,
       color: "from-orange-500 to-amber-500",
     },

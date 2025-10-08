@@ -1,14 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Facebook, Twitter, Instagram, Github, Sparkles } from "lucide-react";
+import { Github, Linkedin, Sparkles } from "lucide-react";
 
 export default function Hero() {
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Github, href: "#", label: "Github" },
+    { icon: Github, href: "https://github.com/samid3v", label: "Github" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/sammydev", label: "LinkedIn" },
   ];
 
   return (
@@ -106,15 +104,6 @@ export default function Hero() {
               transition={{ delay: 0.7 }}
               className="flex flex-wrap gap-4"
             >
-              <motion.button
-                whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(251, 191, 36, 0.5)" }}
-                whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-full font-semibold flex items-center gap-2 shadow-lg shadow-amber-500/50"
-              >
-                <span>View My Work</span>
-                <ArrowRight size={20} />
-              </motion.button>
-              
               <motion.a
                 href="/cv/Sammy_CV.pdf"
                 download

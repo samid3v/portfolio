@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Globe, Code, Zap, Sparkles, ArrowRight } from "lucide-react";
+import { Globe, Code, Zap, Sparkles } from "lucide-react";
 
 export default function Services() {
   const services = [
@@ -10,7 +10,6 @@ export default function Services() {
       title: "Software Engineering",
       description:
         "Developing robust and scalable software solutions with modern technologies and best practices.",
-      projectCount: "50+ Projects",
       color: "from-blue-500 to-cyan-500",
       features: ["Full-Stack Development", "API Integration", "Database Design", "System Architecture"],
     },
@@ -19,7 +18,6 @@ export default function Services() {
       title: "Web Development",
       description:
         "Building responsive and high-performance websites with cutting-edge technologies and SEO optimization.",
-      projectCount: "30+ Projects",
       color: "from-green-500 to-emerald-500",
       features: ["Frontend Design", "Backend Systems", "SEO Optimization", "Performance Tuning"],
     },
@@ -28,7 +26,6 @@ export default function Services() {
       title: "Automation & AI Solutions",
       description:
         "Implementing intelligent automation and AI-driven tools to streamline business processes and enhance productivity.",
-      projectCount: "20+ Projects",
       color: "from-purple-500 to-indigo-500",
       features: ["AI Prompt Engineering", "Cloud Automation", "Workflow Optimization", "CRM Integration"],
     },
@@ -173,25 +170,7 @@ export default function Services() {
                     ))}
                   </div>
 
-                  {/* Project Count Badge */}
-                  <div className="pt-4">
-                    <span className="inline-flex items-center gap-2 px-4 py-2 bg-amber-500/10 border border-amber-500/30 rounded-full text-amber-400 text-sm font-medium">
-                      <Sparkles size={14} />
-                      {service.projectCount}
-                    </span>
-                  </div>
 
-                  {/* CTA Button */}
-                  <motion.button
-                    whileHover={{ x: 5 }}
-                    className="flex items-center gap-2 text-amber-500 hover:text-amber-400 transition-colors font-medium group/btn mt-4"
-                  >
-                    <span>Learn More</span>
-                    <ArrowRight
-                      size={18}
-                      className="group-hover/btn:translate-x-1 transition-transform"
-                    />
-                  </motion.button>
                 </div>
               </motion.div>
             </motion.div>

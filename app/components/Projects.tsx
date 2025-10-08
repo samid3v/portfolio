@@ -1,19 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Sparkles } from "lucide-react";
+import { ExternalLink, Github, Sparkles, BookOpen } from "lucide-react";
 
 export default function Projects() {
   const projects = [
-    {
-      title: "Veterinary Clinic Management System",
-      description: "Features: patient booking, billing, treatment records, customer management.",
-      image: "/projects/Portfolio.PNG",
-      tags: ["Python", "Flask", "MySQL"],
-      color: "from-blue-500 to-cyan-500",
-      github: "#",
-      live: "#",
-    },
     {
       title: "School Management System (One27 K.A.G Academy)",
       description: "Full offline web app with student, teacher, and grade management. Generates dynamic performance reports and record books.",
@@ -151,7 +142,11 @@ export default function Projects() {
                     whileHover={{ scale: 1.1, rotate: 5 }}
                     className={`w-20 h-20 bg-gradient-to-br ${project.color} rounded-2xl flex items-center justify-center shadow-lg overflow-hidden`}
                   >
-                    <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-2xl" />
+                    {project.title.includes("School") ? (
+                      <BookOpen size={32} className="text-white" />
+                    ) : (
+                      <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-2xl" />
+                    )}
                   </motion.div>
                   
                   {/* Shine Effect */}

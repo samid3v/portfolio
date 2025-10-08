@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Github, Linkedin, Twitter, Instagram, Sparkles } from "lucide-react";
+import { Menu, X, Github, Linkedin, Sparkles } from "lucide-react";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,10 +15,8 @@ export default function Header() {
   ];
 
   const socialLinks = [
-    { icon: Github, href: "#", label: "Github" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Github, href: "https://github.com/samid3v", label: "Github" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/sammydev", label: "LinkedIn" },
   ];
 
   return (

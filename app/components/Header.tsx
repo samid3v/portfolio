@@ -11,7 +11,6 @@ export default function Header() {
     { name: "Home", href: "#home" },
     { name: "Services", href: "#services" },
     { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
   ];
 
   const socialLinks = [
@@ -164,6 +163,8 @@ export default function Header() {
                     <motion.a
                       key={social.label}
                       href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       initial={{ opacity: 0, scale: 0 }}
                       animate={{ opacity: 1, scale: 1 }}
                       transition={{ delay: 0.3 + index * 0.1 }}

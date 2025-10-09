@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Sparkles } from "lucide-react";
+import { Github, Linkedin, Sparkles, Mail, MessageCircle, FileText } from "lucide-react";
 
 export default function Hero() {
   const socialLinks = [
@@ -102,16 +102,37 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
-              className="flex flex-wrap gap-4"
+              className="flex gap-4"
             >
               <motion.a
                 href="/cv/Sammy_CV.pdf"
                 download
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-4 bg-white/5 backdrop-blur-sm border border-amber-500/30 text-white rounded-full font-semibold hover:bg-white/10 transition-all inline-block text-center"
+                className="px-8 py-3 bg-white/5 backdrop-blur-sm border border-amber-500/30 text-white rounded-full font-semibold hover:bg-white/10 transition-all text-center flex items-center gap-3"
               >
-                Download CV
+                <span>Download CV</span>
+                <FileText size={16} />
+              </motion.a>
+              <motion.a
+                href="mailto:swanyoike154@gmail.com"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 bg-gradient-to-r from-amber-500/20 to-orange-500/20 backdrop-blur-sm border border-amber-500/30 text-amber-400 rounded-full font-semibold hover:bg-amber-500/30 transition-all text-center flex items-center gap-3"
+              >
+                <span>Contact Me</span>
+                <Mail size={16} />
+              </motion.a>
+              <motion.a
+                href="https://wa.me/254713660231"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 bg-gradient-to-r from-green-500/20 to-green-600/20 backdrop-blur-sm border border-green-500/30 text-green-400 rounded-full font-semibold hover:bg-green-500/30 transition-all text-center flex items-center gap-3"
+              >
+                <span>WhatsApp</span>
+                <MessageCircle size={16} />
               </motion.a>
             </motion.div>
 

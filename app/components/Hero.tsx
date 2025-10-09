@@ -20,6 +20,7 @@ export default function Hero() {
             opacity: [0.3, 0.5, 0.3],
           }}
           transition={{ duration: 4, repeat: Infinity }}
+          style={{ willChange: 'transform, opacity' }}
           className="absolute top-20 left-10 w-72 h-72 bg-amber-500/20 rounded-full blur-3xl"
         />
         <motion.div
@@ -29,6 +30,7 @@ export default function Hero() {
             opacity: [0.3, 0.5, 0.3],
           }}
           transition={{ duration: 5, repeat: Infinity }}
+          style={{ willChange: 'transform, opacity' }}
           className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"
         />
       </div>
@@ -150,12 +152,12 @@ export default function Hero() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.9 + index * 0.1 }}
-                  whileHover={{ 
-                    scale: 1.2, 
-                    rotate: 360,
+                  whileHover={{
+                    scale: 1.2,
                     boxShadow: "0 0 20px rgba(251, 191, 36, 0.6)"
                   }}
                   whileTap={{ scale: 0.9 }}
+                  style={{ willChange: 'transform' }}
                   aria-label={social.label}
                   className="w-12 h-12 bg-gradient-to-br from-amber-500/20 to-orange-500/20 backdrop-blur-sm border border-amber-500/30 rounded-full flex items-center justify-center text-amber-400 hover:text-white transition-all"
                 >
@@ -180,15 +182,17 @@ export default function Hero() {
                   rotate: [0, 180, 360],
                 }}
                 transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                style={{ willChange: 'transform' }}
                 className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 blur-3xl opacity-50"
               />
-              
+
               <motion.div
                 animate={{
                   scale: [1.1, 1, 1.1],
                   rotate: [360, 180, 0],
                 }}
                 transition={{ duration: 6, repeat: Infinity, ease: "linear" }}
+                style={{ willChange: 'transform' }}
                 className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 blur-2xl opacity-30"
               />
 
@@ -198,6 +202,7 @@ export default function Hero() {
                   y: [0, -20, 0],
                 }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                style={{ willChange: 'transform' }}
                 className="relative"
               >
                 {/* Glowing Border */}
@@ -215,6 +220,7 @@ export default function Hero() {
                       x: ["-100%", "200%"],
                     }}
                     transition={{ duration: 3, repeat: Infinity, repeatDelay: 2 }}
+                    style={{ willChange: 'transform' }}
                     className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 rounded-full z-20"
                   />
                   <img
@@ -231,6 +237,7 @@ export default function Hero() {
                     rotate: [0, 5, 0, -5, 0],
                   }}
                   transition={{ duration: 3, repeat: Infinity }}
+                  style={{ willChange: 'transform' }}
                   className="absolute -bottom-4 -right-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white px-6 py-3 rounded-full font-bold shadow-lg shadow-amber-500/50"
                 >
                   <span className="flex items-center gap-2">

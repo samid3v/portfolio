@@ -1,4 +1,0 @@
-- [x] Edit app/components/Projects.tsx: Replace image with ShoppingCart icon for "E-Commerce Solutions" project
-- [x] Add new project entry for "Personal Portfolio" in projects array
-- [x] Delete app/favicon.ico to remove Next.js favicon
-- [x] Test the changes by running the app

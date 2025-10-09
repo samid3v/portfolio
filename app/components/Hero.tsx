@@ -40,7 +40,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="space-y-6 order-2 lg:order-1"
+            className="space-y-6 order-1"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -149,7 +149,7 @@ export default function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="order-1 lg:order-2 flex justify-center"
+            className="order-2 flex justify-center"
           >
             <div className="relative">
               {/* Outer Glow Rings */}

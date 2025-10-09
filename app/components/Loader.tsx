@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Code } from "lucide-react";
 
 const creativeMessages = [
   "Wait a minute...",
@@ -75,13 +76,12 @@ export default function Loader({ onLoadingComplete }: { onLoadingComplete: () =>
           
           {/* Inner circle */}
           <div className="relative w-24 h-24 bg-gradient-to-br from-amber-500 to-orange-600 rounded-full flex items-center justify-center shadow-2xl">
-            <motion.span
+            <motion.div
               animate={{ rotate: 360 }}
               transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
-              className="text-4xl"
             >
-              ⚡
-            </motion.span>
+              <Code size={32} className="text-white" />
+            </motion.div>
           </div>
         </motion.div>
 

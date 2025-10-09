@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Sparkles, BookOpen } from "lucide-react";
+import { ExternalLink, Github, Sparkles, BookOpen, ShoppingCart } from "lucide-react";
 
 export default function Projects() {
   const projects = [
@@ -11,6 +11,15 @@ export default function Projects() {
       image: "/projects/Portfolio.PNG",
       tags: ["Web App", "Offline", "Reports"],
       color: "from-green-500 to-emerald-500",
+      github: "#",
+      live: "#",
+    },
+    {
+      title: "Personal Portfolio",
+      description: "Modern portfolio website built with Next.js, showcasing projects, skills, and experience with smooth animations.",
+      image: "/projects/Portfolio.PNG",
+      tags: ["Next.js", "React", "Portfolio"],
+      color: "from-blue-500 to-cyan-500",
       github: "#",
       live: "#",
     },
@@ -144,6 +153,8 @@ export default function Projects() {
                   >
                     {project.title.includes("School") ? (
                       <BookOpen size={32} className="text-white" />
+                    ) : project.title.includes("E-Commerce") ? (
+                      <ShoppingCart size={32} className="text-white" />
                     ) : (
                       <img src={project.image} alt={project.title} className="w-full h-full object-cover rounded-2xl" />
                     )}

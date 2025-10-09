@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Samid3v - Software Engineer | Web Developer | Automation & AI Solutions",
   description: "Innovative Software Engineer with a strong background in web development, backend systems, and cloud-based automation. Skilled in designing and deploying full-stack applications, integrating AI-driven tools, and optimizing business workflows through technology.",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({

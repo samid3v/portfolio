@@ -151,7 +151,14 @@ export default function Header() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.1 * index }}
-                    onClick={() => setIsMenuOpen(false)}
+                    onClick={(e) => {
+                      setIsMenuOpen(false);
+                      const target = document.querySelector(item.href);
+                      if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
                     className="block text-gray-300 hover:text-amber-500 transition-colors duration-200 font-medium px-4 py-2 rounded-lg hover:bg-amber-500/10"
                   >
                     {item.name}

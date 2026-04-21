@@ -47,7 +47,7 @@ export default function Projects() {
       image: "/projects/petfarm pic.PNG",
       tags: ["Pet Management", "Invoicing", "Analytics"],
       color: "from-orange-500 to-amber-500",
-      github: "#",
+      github: "https://github.com/samid3v/petfarm",
       live: "https://petclinic-five.vercel.app/",
     },
     {

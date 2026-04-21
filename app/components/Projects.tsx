@@ -6,15 +6,6 @@ import { ExternalLink, Github, Sparkles, BookOpen, ShoppingCart } from "lucide-r
 export default function Projects() {
   const projects = [
     {
-      title: "School Management System (One27 K.A.G Academy)",
-      description: "Full offline web app with student, teacher, and grade management. Generates dynamic performance reports and record books.",
-      image: "/projects/Portfolio.PNG",
-      tags: ["Web App", "Offline", "Reports"],
-      color: "from-green-500 to-emerald-500",
-      github: "#",
-      live: "#",
-    },
-    {
       title: "Personal Portfolio",
       description: "Modern portfolio website built with Next.js, showcasing projects, skills, and experience with smooth animations.",
       image: "/projects/Portfolio.PNG",
@@ -33,7 +24,7 @@ export default function Projects() {
       live: "https://estate-flow-gamma.vercel.app/",
     },
     {
-      title: "Real Estate CRM Website",
+      title: "Real Estate Website",
       description: "CRM integration for leads management. Google Analytics, Ads, and live chatbot embedded.",
       image: "/projects/rehan-website.PNG",
       tags: ["CRM", "Analytics", "Chatbot"],
@@ -58,15 +49,6 @@ export default function Projects() {
       color: "from-red-500 to-orange-500",
       github: "#",
       live: "https://manzilrestaurant.co.ke",
-    },
-    {
-      title: "E-Commerce Solutions",
-      description: "Built and maintained high-performance eCommerce websites with CRM and analytics integration.",
-      image: "/projects/Portfolio.PNG",
-      tags: ["eCommerce", "CRM", "Analytics"],
-      color: "from-indigo-500 to-purple-500",
-      github: "#",
-      live: "#",
     },
   ];
 

@@ -15,6 +15,15 @@ export default function Projects() {
       live: "#",
     },
     {
+      title: "Mogo - Kenya Branch",
+      description: "A modern 5-page marketing website for Mogo's Kenya branch, built with Next.js to deliver a fast, responsive, and professional corporate presence.",
+      image: "/projects/mogo.png",
+      tags: ["Next.js", "React", "Corporate", "Marketing"],
+      color: "from-lime-500 to-green-500",
+      github: "#",
+      live: "https://mogo-lime.vercel.app",
+    },
+    {
       title: "Real Estate CRM",
       description: "Comprehensive CRM system with properties and units management, buyer payment tracking, HR module, commission tracking, finance analytics, and employee performance monitoring.",
       image: "/projects/crm pic.PNG",

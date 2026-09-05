@@ -1,11 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Github, Linkedin, Code } from "lucide-react";
+import ContactModal from "./ContactModal";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
     { name: "Home", href: "#home" },
@@ -23,7 +34,11 @@ export default function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a2e]/80 backdrop-blur-xl border-b border-gray-800/50"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? "bg-[#1a1a2e]/90 backdrop-blur-xl border-b border-gray-800/50 py-0 shadow-2xl"
+          : "bg-gradient-to-b from-[#1a1a2e]/80 to-transparent border-b border-transparent py-4"
+      }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
@@ -78,7 +93,7 @@ export default function Header() {
           </div>
 
           {/* Social Icons - Desktop */}
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-4">
             {socialLinks.map((social, index) => (
               <motion.a
                 key={social.label}
@@ -98,6 +113,22 @@ export default function Header() {
                 <social.icon size={18} />
               </motion.a>
             ))}
+            
+            {/* CTA Button */}
+            <motion.button
+              onClick={() => setIsContactModalOpen(true)}
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.4 }}
+              whileHover={{ 
+                scale: 1.05,
+                boxShadow: "0 0 20px rgba(251, 191, 36, 0.4)"
+              }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-full shadow-lg shadow-amber-500/20"
+            >
+              Hire Me
+            </motion.button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -165,29 +196,50 @@ export default function Header() {
                   </motion.a>
                 ))}
                 
-                <div className="flex items-center justify-center space-x-4 px-4 pt-4 border-t border-gray-800">
-                  {socialLinks.map((social, index) => (
-                    <motion.a
-                      key={social.label}
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      initial={{ opacity: 0, scale: 0 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.3 + index * 0.1 }}
-                      whileTap={{ scale: 0.9 }}
-                      aria-label={social.label}
-                      className="w-10 h-10 bg-gradient-to-br from-amber-500/10 to-orange-500/10 backdrop-blur-sm border border-amber-500/30 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-500 transition-all"
-                    >
-                      <social.icon size={18} />
-                    </motion.a>
-                  ))}
+                <div className="flex flex-col items-center justify-center space-y-6 px-4 pt-4 border-t border-gray-800">
+                  <div className="flex space-x-4">
+                    {socialLinks.map((social, index) => (
+                      <motion.a
+                        key={social.label}
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.3 + index * 0.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        aria-label={social.label}
+                        className="w-10 h-10 bg-gradient-to-br from-amber-500/10 to-orange-500/10 backdrop-blur-sm border border-amber-500/30 rounded-full flex items-center justify-center text-gray-400 hover:text-amber-500 transition-all"
+                      >
+                        <social.icon size={18} />
+                      </motion.a>
+                    ))}
+                  </div>
+
+                  {/* Mobile CTA Button */}
+                  <motion.button
+                    onClick={() => {
+                      setIsContactModalOpen(true);
+                      setIsMenuOpen(false);
+                    }}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    className="w-full text-center py-3 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-xl shadow-lg shadow-amber-500/20"
+                  >
+                    Hire Me
+                  </motion.button>
                 </div>
               </div>
             </motion.div>
           )}
         </AnimatePresence>
       </nav>
+
+      <ContactModal 
+        isOpen={isContactModalOpen} 
+        onClose={() => setIsContactModalOpen(false)} 
+      />
     </motion.header>
   );
 }
